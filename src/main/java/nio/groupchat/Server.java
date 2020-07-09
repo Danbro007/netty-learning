@@ -28,6 +28,8 @@ public class Server {
     private Selector selector;
 
 
+
+
     public Server() throws Exception {
         this.serverSocketChannel = ServerSocketChannel.open();
         InetSocketAddress inetSocketAddress = new InetSocketAddress(PORT);
@@ -91,6 +93,7 @@ public class Server {
     private void sendMsg(SocketChannel targetChannel, String msg) throws IOException {
         targetChannel.write(ByteBuffer.wrap(msg.getBytes()));
     }
+
     // 接收消息
     private void readMsg(SelectionKey selectionKey) throws Exception {
         SocketChannel channel = (SocketChannel) selectionKey.channel();

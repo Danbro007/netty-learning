@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f77824cf-6c37-4d4d-a358-8e919a14c2d2" name="Default Changelist" comment="" />
+    <list default="true" id="f77824cf-6c37-4d4d-a358-8e919a14c2d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/netty-learning.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/nio/groupchat/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nio/groupchat/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/netty.kotlin_module" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,39 +27,56 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\javaDevSoftWare\apache-maven-3.6.1\respository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../javaDevSoftWare/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="E:\javaDevSoftWare\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1eJVGhr4n0TBjgz3kpBzjmSkcqA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last.edited.regexp" value="Sample Text" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/nio/groupchat" />
+    <property name="last_opened_file_path" value="$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.20.Final/netty-all-4.1.20.Final.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.085689805" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\javaProject\netty\src\main\java\nio\groupchat" />
+      <recent name="D:\javaProject\netty\src\main\java" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\javaProject\netty\src\main\java\nio\groupchat" />
       <recent name="D:\javaProject\netty\src\main\java" />
       <recent name="D:\javaProject\netty" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\javaProject\netty\src\main\java\nio\groupchat" />
-      <recent name="D:\javaProject\netty\src\main\java" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.NettyClient">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nio.groupchat.Client" />
       <module name="netty" />
@@ -76,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nio.groupchat.GroupChatServer" />
-      <module name="netty" />
+    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="netty.NettyClient" />
+      <module name="netty-learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nio.groupchat.*" />
+          <option name="PATTERN" value="netty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="nio.NioClient" />
-      <module name="netty" />
+    <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="netty.NettyServer" />
+      <module name="netty-learning" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="nio.*" />
+          <option name="PATTERN" value="netty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,7 +131,7 @@
     </configuration>
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="nio.groupchat.Server" />
-      <module name="netty" />
+      <module name="netty-learning" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="nio.groupchat.*" />
@@ -117,18 +144,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Client" />
-      <item itemvalue="Application.NioClient" />
       <item itemvalue="Application.Server" />
-      <item itemvalue="Application.GroupChatServer" />
       <item itemvalue="Application.GroupChatClient" />
+      <item itemvalue="Application.NettyServer" />
+      <item itemvalue="Application.NettyClient" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.NettyClient" />
+        <item itemvalue="Application.NettyServer" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Client" />
         <item itemvalue="Application.GroupChatClient" />
-        <item itemvalue="Application.GroupChatServer" />
-        <item itemvalue="Application.NioClient" />
       </list>
     </recent_temporary>
   </component>
@@ -147,49 +174,94 @@
       <workItem from="1594111373685" duration="3252000" />
       <workItem from="1594120946122" duration="4463000" />
       <workItem from="1594174470545" duration="13484000" />
+      <workItem from="1594265520775" duration="1859000" />
+      <workItem from="1594267459272" duration="2259000" />
+      <workItem from="1594270584460" duration="773000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="629" y="135" key="#Server" timestamp="1594269186421">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="629" y="135" key="#Server/0.0.1920.1040@0.0.1920.1040" timestamp="1594269186421" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594180673206">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1594180673206" />
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1594183155744">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="669" y="76" key="#com.intellij.ide.util.MemberChooser" timestamp="1594269094926">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1594183155744" />
+    <state x="669" y="76" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594269094926" />
+    <state x="811" y="272" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1594271077831">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="811" y="272" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594271077831" />
+    <state x="736" y="412" width="447" height="222" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1594266077930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="736" y="412" width="447" height="222" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1594266077930" />
+    <state x="711" y="344" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1594271081989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="344" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594271081989" />
     <state x="396" y="45" key="#xdebugger.evaluate" timestamp="1594184722814">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="396" y="45" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1594184722814" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1594123286621">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="558" y="86" key="CommitChangelistDialog2" timestamp="1594271280614">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="558" y="86" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594271280614" />
+    <state x="409" y="170" key="FileChooserDialogImpl" timestamp="1594267472577">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594123286621" />
-    <state width="1239" height="309" key="GridCell.Tab.0.bottom" timestamp="1594191476554">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="409" y="170" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594267472577" />
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom" timestamp="1594269585609">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1239" height="309" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594191476554" />
-    <state width="1239" height="309" key="GridCell.Tab.0.center" timestamp="1594191476554">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594269585609" />
+    <state width="1877" height="2" key="GridCell.Tab.0.center" timestamp="1594269585608">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1239" height="309" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594191476554" />
-    <state width="1239" height="309" key="GridCell.Tab.0.left" timestamp="1594191476553">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594269585608" />
+    <state width="1877" height="2" key="GridCell.Tab.0.left" timestamp="1594269585608">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1239" height="309" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594191476553" />
-    <state width="1239" height="309" key="GridCell.Tab.0.right" timestamp="1594191476554">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594269585608" />
+    <state width="1877" height="2" key="GridCell.Tab.0.right" timestamp="1594269585609">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1239" height="309" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594191476554" />
+    <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594269585609" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1594271357530">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594271357530" />
     <state x="362" y="82" width="684" height="524" key="StructurePopup" timestamp="1594183203628">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="362" y="82" width="684" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1594183203628" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1594271271877">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594271271877" />
+    <state x="679" y="481" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1594270695427">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="481" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1040@0.0.1920.1040" timestamp="1594270695427" />
+    <state x="538" y="186" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594267853272">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="538" y="186" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594267853272" />
     <state x="172" y="77" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1594184741244">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
