@@ -1,0 +1,31 @@
+syntax = "proto3";
+option java_outer_classname = "MyDataInfo";
+option java_package = "netty.codec2";
+
+message MyMessage{
+  // 枚举类
+  enum DataType{
+    StudentType = 0;
+    WorkerType = 1;
+  }
+  // 第一个属性
+  DataType data_type = 1;
+
+  // oneof 两个里面只取一个
+  oneof DataBody{
+    Student student = 2;
+    Worker worker = 3;
+  }
+}
+
+
+message Student{
+  int32 id = 1;
+  string name = 2;
+}
+
+
+message Worker{
+  int32 id = 1;
+  int32 age = 2;
+}

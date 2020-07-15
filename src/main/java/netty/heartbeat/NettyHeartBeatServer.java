@@ -8,8 +8,6 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.timeout.IdleStateHandler;
-import netty.groupchat.NettyGroupChatServer;
-import netty.groupchat.NettyGroupChatServerHandler;
 
 import java.util.concurrent.TimeUnit;
 
@@ -48,7 +46,7 @@ public class NettyHeartBeatServer {
                          * 具体的空闲处理交给 IdleStateHandler 的下一个处理器的 userEventTriggered() 方法处理
                          */
                         pipeline.addLast(new IdleStateHandler(3, 5, 7, TimeUnit.SECONDS));
-                        pipeline.addLast(new MyHeartBeatHandler());
+                        pipeline.addLast(new MyHeartBeatServerHandler());
                     }
                 });
         try {

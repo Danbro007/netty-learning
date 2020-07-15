@@ -19,7 +19,7 @@ import java.util.Date;
  */
 public class NettyGroupChatServerHandler extends SimpleChannelInboundHandler {
     /**
-     * 存储所有的 channel ，channles 是单例模式
+     * 存储所有的 channel ，channles 是单例
      */
     private static DefaultChannelGroup channels = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
     /**
@@ -43,7 +43,7 @@ public class NettyGroupChatServerHandler extends SimpleChannelInboundHandler {
         });
     }
 
-    // 当处理器被添加到当前 channel 的上下文触发，既新的连接创建。
+    // 当处理器被添加到当前 channel 的上下文时触发，既新的连接创建。
     @Override
     public void handlerAdded(ChannelHandlerContext ctx) throws Exception {
         String msg = String.format("客户端【%s】加入聊天", ctx.channel().remoteAddress());
@@ -51,7 +51,7 @@ public class NettyGroupChatServerHandler extends SimpleChannelInboundHandler {
         channels.add(ctx.channel());
     }
 
-    // 当前 channel 的上下文删除处理器触发，既连接关闭。
+    // 当前 channel 的上下文删除处理器时触发，既连接关闭。
     @Override
     public void handlerRemoved(ChannelHandlerContext ctx) throws Exception {
         String msg = String.format("客户端【%s】离线！", ctx.channel().remoteAddress());
