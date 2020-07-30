@@ -20,10 +20,13 @@ import java.util.concurrent.Executors;
  */
 public class NettyClient {
 
+    // 建立一个线程池
     private static ExecutorService executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+    // 计数器
     private int count = 0;
     private static NettyClientHandler client;
 
+    // 返回一个 serviceClass 的代理对象
     public Object getBean(final Class<?> serviceClass, final String providerName) {
         return Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(),
                 new Class<?>[]{serviceClass}, (proxy, method, args) -> {

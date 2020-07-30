@@ -12,8 +12,11 @@ import java.util.concurrent.Callable;
  * @Author Danrbo
  */
 public class NettyClientHandler extends ChannelInboundHandlerAdapter implements Callable {
+    // 方便其他方法来共享这个 context
     private ChannelHandlerContext context;
+    // 客户端获取的结果
     private String result;
+    // 客户端发送的数据
     private String param;
 
 
@@ -32,7 +35,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter implements 
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        System.out.println(" channelActive 被调用  ");
+        System.out.println(" channelActive() 被调用  ");
         context = ctx;
     }
 
