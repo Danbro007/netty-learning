@@ -31,14 +31,11 @@ public class NettyProtoBufServer {
                 });
         System.out.println("服务器启动。。。。");
         ChannelFuture channelFuture = bootstrap.bind(6666).sync();
-        channelFuture.addListener(new ChannelFutureListener() {
-            @Override
-            public void operationComplete(ChannelFuture future) throws Exception {
-                if (future.isSuccess()){
-                    System.out.println("端口绑定成功！");
-                }else {
-                    System.out.println("端口绑定失败！");
-                }
+        channelFuture.addListener((ChannelFutureListener) future -> {
+            if (future.isSuccess()){
+                System.out.println("端口绑定成功！");
+            }else {
+                System.out.println("端口绑定失败！");
             }
         });
         channelFuture.channel().closeFuture().sync();
