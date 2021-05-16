@@ -15,9 +15,10 @@ import io.netty.util.CharsetUtil;
 public class MyClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
     private int count;
     @Override
-    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+    public void channelActive(ChannelHandlerContext ctx) {
         // 向客户端发送 10 次数据
         for (int i = 0; i < 10; i++) {
+            System.out.println(String.format("发送第【%s】次", i));
             ctx.writeAndFlush(Unpooled.copiedBuffer(("【hello server " + i + "】"), CharsetUtil.UTF_8));
         }
     }

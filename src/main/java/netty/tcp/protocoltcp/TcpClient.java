@@ -9,7 +9,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
  * @Classname TcpClient
- * @Description TODO
+ * @Description TODO 解决TCP粘包测试
  * @Date 2020/7/16 16:37
  * @Author Danrbo
  */

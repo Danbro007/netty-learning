@@ -6,7 +6,7 @@ import io.netty.handler.codec.MessageToByteEncoder;
 
 /**
  * @Classname MessageProtocolEncoder
- * @Description TODO
+ * @Description TODO 消息协议编码器
  * @Date 2020/7/16 20:34
  * @Author Danrbo
  */

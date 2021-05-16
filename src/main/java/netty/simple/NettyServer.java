@@ -33,18 +33,24 @@ public class NettyServer {
         NioEventLoopGroup workGroup = new NioEventLoopGroup(1);
         // 创建服务器对象，用来配置参数
         ServerBootstrap bootstrap = new ServerBootstrap();
-        bootstrap.group(bossGroup,workGroup)//配置两个线程组
-                .channel(NioServerSocketChannel.class)// 使用ServerSocketChannel来当做通道实现
-                .option(ChannelOption.SO_BACKLOG,128)// 设置线程队列等待个数
-                .childOption(ChannelOption.SO_KEEPALIVE,true)//设置保持活动连接的状态
+        //配置两个线程组
+        bootstrap.group(bossGroup,workGroup)
+                // 使用ServerSocketChannel来当做通道实现
+                .channel(NioServerSocketChannel.class)
+                // 设置线程队列等待连接的个数
+                .option(ChannelOption.SO_BACKLOG,128)
+                //设置保持活动连接的状态
+                .childOption(ChannelOption.SO_KEEPALIVE,true)
                 .childHandler(new ChannelInitializer<SocketChannel>() {
                     @Override
                     protected void initChannel(SocketChannel socketChannel) throws Exception {
-                        socketChannel.pipeline().addLast(new NioServerHandler());// 给 workGroup 里的 eventloop 对应的管道设置自定义的处理器
+                        // 给 workGroup 里的 eventloop 对应的管道设置自定义的处理器
+                        socketChannel.pipeline().addLast(new NioServerHandler());
                     }
                 });
         System.out.println("服务器启动。。。。");
-        ChannelFuture channelFuture = bootstrap.bind(6666).sync();//设置端口,并同步生成一个 ChannelFuture 对象
+        //设置端口,并同步生成一个 ChannelFuture 对象
+        ChannelFuture channelFuture = bootstrap.bind(6666).sync();
         channelFuture.addListener(new ChannelFutureListener() {
             @Override
             public void operationComplete(ChannelFuture future) throws Exception {

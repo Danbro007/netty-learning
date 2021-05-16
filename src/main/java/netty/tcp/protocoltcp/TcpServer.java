@@ -25,7 +25,7 @@ public class TcpServer {
                     .channel(NioServerSocketChannel.class)
                     .childHandler(new ChannelInitializer<SocketChannel>() {
                         @Override
-                        protected void initChannel(SocketChannel socketChannel) throws Exception {
+                        protected void initChannel(SocketChannel socketChannel) {
                             socketChannel.pipeline().addLast(new MessageProtocolDecoder());
                             socketChannel.pipeline().addLast(new MessageProtocolEncoder());
                             socketChannel.pipeline().addLast(new MyServerHandler());

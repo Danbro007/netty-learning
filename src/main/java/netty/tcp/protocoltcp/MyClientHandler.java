@@ -1,7 +1,5 @@
 package netty.tcp.protocoltcp;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.util.CharsetUtil;
@@ -25,9 +23,10 @@ public class MyClientHandler extends SimpleChannelInboundHandler<MessageProtocol
     }
 
     @Override
-    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+    public void channelActive(ChannelHandlerContext ctx) {
         System.out.println("客户端发送数据");
         for (int i = 0; i < 10; i++) {
+            // 回复数据给服务器
             String mes = "【hello server " + i + "】";
             MessageProtocol messageProtocol = new MessageProtocol(mes.getBytes(CharsetUtil.UTF_8).length, mes.getBytes(CharsetUtil.UTF_8));
             ctx.writeAndFlush(messageProtocol);

@@ -29,6 +29,6 @@ public class MyServerHandler extends SimpleChannelInboundHandler<ByteBuf> {
         System.out.println(String.format("接收到【%s】发送的消息：%s", ctx.channel().remoteAddress(),string));
         System.out.println(String.format("接收到的消息数：%s", ++this.count));
         // 发送一个随机字符串到客户端
-        ctx.writeAndFlush(Unpooled.copiedBuffer(UUID.randomUUID().toString() + " ",CharsetUtil.UTF_8));
+        ctx.writeAndFlush(Unpooled.copiedBuffer(UUID.randomUUID() + " ",CharsetUtil.UTF_8));
     }
 }

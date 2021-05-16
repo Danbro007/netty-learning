@@ -9,8 +9,8 @@ import java.util.List;
 
 /**
  * @Classname MyDecoder
- * @Description TODO
- * 把接收到的字节转换成 Long
+ * @Description TODO 把接收到的字节转换成 Long
+ * 继承ReplayingDecoder，在decode之前会执行callDecode方法判断数据是否足够读取，不需要手动来判断。
  * @Date 2020/7/15 13:22
  * @Author Danrbo
  */

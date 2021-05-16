@@ -8,8 +8,7 @@ import java.util.List;
 
 /**
  * @Classname MyDecoder
- * @Description TODO
- * 把接收到的字节转换成 Long
+ * @Description TODO 把接收到的字节转换成 Long
  * @Date 2020/7/15 13:22
  * @Author Danrbo
  */

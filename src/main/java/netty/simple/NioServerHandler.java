@@ -15,7 +15,8 @@ public class NioServerHandler extends ChannelInboundHandlerAdapter {
     // 接收消息
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+        //设置日期格式
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         long start = System.currentTimeMillis();
         System.out.println("处理" + ctx.channel().remoteAddress() + "请求的线程是：" + Thread.currentThread().getName() + "----->" + df.format(new Date()));
         // 【1】模拟线程阻塞
